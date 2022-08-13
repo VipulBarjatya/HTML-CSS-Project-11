@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+/* Utility classes */
+
+.btn {
+    background: -webkit-linear-gradient(270deg, #09c5f9, #055eea);
+    border: none;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 12px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0px 10px 15px rgba(5, 93, 234, 0.3);
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* Navbar Section */
+.logo-img {
+    width: 120px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+}
+
+.nav-items {
+    display: flex;
+    gap: 3rem;
+    font-size: 20px;
+    align-items: center;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-weight: 400;
+}
+
+.nav-items .active {
+    color: #000;
+    font-weight: 600;
+}
+
+.nav-btn {
+    background: -webkit-linear-gradient(315deg, #09c5f9, #055eea);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    padding: 4rem 2rem;
+}
+
+.border .nav-btn {
+    font-weight: 800;
+}
+
+.border {
+    height: 4rem;
+    border: double 2px transparent;
+    border-radius: 8px;
+    background-image: linear-gradient(white, white), linear-gradient(to bottom right, #09c5f9, #055eea);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.border:hover {
+    box-shadow: 0px 0px 10px #055dea3b;
+}
+
+
+/* Hero Section */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 9rem;
+}
+
+.main-heading {
+    font-size: 65px;
+    margin-bottom: 2rem;
+}
+
+.desc {
+    font-size: 22px;
+    color: #adadad;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 650px;
+}
+
+/* Main Section 1 */
+.main-section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.section-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+
+.section-img img {
+    width: 700px;
+}
+
+.section-heading {
+    font-size: 60px;
+    margin-bottom: 4rem;
+}
+
+
+/* Section 2 */
+
+
+.main-section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.section2-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.section2-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-right .section-img img {
+    width: 650px;
+}
+
+/* Service section */
+
+.services {
+
+    height: 100vh;
+    margin-bottom: 2rem;
+}
+
+.top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem 0 4rem 0;
+}
+
+.top-section .main-text {
+    margin: auto 0;
+    font-size: 58px;
+    padding-right: 2em;
+}
+
+.side-text {
+    margin: 3rem 0 0 0;
+    font-size: 18px;
+    color: #adadad;
+    padding-right: 6em;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+.service-img {
+    height: 60px;
+    margin-bottom: 2rem;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service-card {
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.service-heading {
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+
+.service-description {
+    margin-bottom: 2rem;
+    font-size: 15px;
+    line-height: 1.8rem;
+    color: #adadad;
+}
+
+
+/* Pricing Section */
+
+.pricing {
+    background: linear-gradient(to bottom right, #09c5f9, #055eea);
+}
+
+.pricing-heading {
+    color: #fff;
+    padding-top: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 50px;
+}
+
+.pricing-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.features li img {
+    width: 24px;
+    margin-right: 1rem;
+}
+
+.pricing-card {
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card-heading {
+    font-size: 32px;
+    font-weight: bolder;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-subheading {
+    color: #838383;
+    font-size: 17px;
+    margin-bottom: 4rem;
+    letter-spacing: 1px;
+}
+
+.card-subheading.popular {
+    margin-bottom: 0;
+}
+
+.features {
+    margin-bottom: 4rem;
+}
+
+
+.plan-price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.charges {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.charges span {
+    color: #838383;
+}
+
+.policy {
+    font-weight: 600;
+    color: #838383;
+    margin-bottom: 2rem;
+}
+
+.text-content {
+    padding: 0 4rem 0 2rem;
+}
+
+
+.card-header.dark {
+    background-color: #222;
+    border-radius: 10px;
+    color: #fff;
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Testimonial Section */
+
+.testimonial-section {
+    height: 100vh;
+    background-color: #fdfeff;
+}
+
+.testimonial-heading {
+    font-size: 54px;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: #1d2b4f;
+}
+
+.testimonial-desc {
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    color: #adadad;
+
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    color: #1d2b4f;
+}
+
+.testimonial {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.testimonial-text {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author .img {
+    width: 80px;
+    height: 80px;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+}
+
+.author-detail .name {
+    font-size: 18px;
+    margin-bottom: .5rem;
+}
+
+.author-detail .position {
+    font-size: 14px;
+}
+
+/* Banner */
+
+.banner {
+    height: 50vh;
+    background: linear-gradient(175deg, #09c5f9, #055eea);
+}
+
+.banner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.banner-heading {
+    color: #fff;
+    font-size: 66px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.banner-text {
+    margin: 6rem 0;
+}
+
+.banner-desc {
+    color: #fff;
+    font-size: 20px;
+}
+
+.button {
+    margin-left: auto;
+
+}
+
+.register {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 1.2rem 2.4rem;
+}
+
+/* Footer Section */
+
+footer {
+    margin-top: auto;
+    height: 50vh;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12rem;
+    line-height: 2rem;
+}
+
+.logo-text {
+    margin-right: 2rem;
+
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 2rem;
+}
+
+.footer-text {
+    color: #838383;
+    font-size: 18px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    min-width: max-content;
+    gap: 1rem;
+    margin-right: 10rem;
+}
+
+.footer-menus {
+    display: flex;
+    margin-left: 5rem;
+
+}
+
+
+.social-media-icons {
+    width: 200px;
+}
+
+.footer-heading {
+    color: #1d2b4f;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.Social-Media {}
+
+.Social-Media .footer-heading {
+    margin-bottom: 2rem;
+}
+
+.footer-top a {
+    text-decoration: none;
+    color: #838383;
+    font-size: 18px;
+}
